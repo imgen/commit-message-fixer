@@ -1,0 +1,5 @@
+#!/bin/sh
+
+echo "checking commit message"
+./cmf "$1"
+exit 0
