@@ -14,8 +14,11 @@ func main() {
 
 	cmdName := "git"
 	cmdArgs := strings.Split("rev-parse --abbrev-ref HEAD", " ")
-	var cmdOut []byte
-	if cmdOut, err := exec.Command(cmdName, cmdArgs...).CombinedOutput(); err != nil {
+	var (
+		cmdOut []byte
+		err    error
+	)
+	if cmdOut, err = exec.Command(cmdName, cmdArgs...).CombinedOutput(); err != nil {
 		strOutput := string(cmdOut)
 		println(strOutput)
 		os.Exit(1)
