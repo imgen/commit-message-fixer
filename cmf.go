@@ -12,6 +12,9 @@ func main() {
 	commitMessage := getFileAsString(filePath)
 
 	branchName := getBranchName()
+	if strings.HasPrefix(branchName, "master") {
+		return
+	}
 	jiraIssueID := getJiraIssueID(branchName)
 
 	if commitMessage = fixCommitMessage(commitMessage, jiraIssueID); commitMessage != "" {
