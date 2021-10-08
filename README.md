@@ -6,4 +6,4 @@ For `Windows`, put `cmf.exe` inside the root directory of the repository, then p
 
 For `Mac OS X`, you need to put the file `cmf` inside the root directory of the repository instead of `cmf.exe`. The rest are the same as `Windows`.
 
-For `Linux`, build the executable yourself and put it inside the root directory of the repository, the rest are the same.  
+For `Linux`, build the executable yourself and put it inside the root directory of the repository, the rest are the same as `Windows`.  
