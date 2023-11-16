@@ -11,10 +11,7 @@ For `Mac OS X`, you need to put the file `cmf` inside the root directory of the 
 ```
 chmod 755 ./cmf
 ```
-For recent version of `Mac`, to walkaround the security check of the OS, we need to run it from command line like below
-```
-./cmf 
-```
+For recent version of `Mac`, to walkaround the security check of the OS, we need to run it from `Finder` by right clicking the file and then click `Open`, 
 then allow the application to run by clicking `Open` button in the popup warning dialog; otherwise, it will crash at runtime when we try to execute from the script
 
 then put the `./commit-msg` script in `.git/hooks` directory, run below command to make it executable
